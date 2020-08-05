@@ -1,1 +1,1 @@
-Iniciando
+// Criando Notion para iniciar o projeto
