@@ -1,1 +1,0 @@
-// Criando Notion para iniciar o projeto
