@@ -1,0 +1,31 @@
+{% extends "layout.njk" %}
+<!-- <nav>
+    <a href="/recipes" class="header-about-border">Receitas</a>
+</nav> -->
+
+{% block head %}
+<title>Foodfy - Melhores opções de receitas</title>
+{% endblock %}
+
+{% block content %}
+
+<section>
+    <div class="recipes">
+        {% for recipe in recipes %}
+        <div class="type-recipes" id="">
+            <img src="{{recipe.image}}" alt="{{recipe.title}}">
+            <h3 class="whatRecipes">{{recipe.title}}</h3>
+            <p class="whatNameCreator">{{recipe.author}}</p>
+        </div>
+        {% endfor %}
+
+        <!-- {% for recipe in recipes %}
+        <div class="type-recipes" id="">
+            <img src="{{recipe.image}}" alt="{{recipe.title}}">
+            <h3 class="whatRecipes">{{recipe.title}}</h3>
+            <p class="whatNameCreator">{{recipe.author}}</p>
+        </div>
+        {% endfor %} -->
+    </div>        
+</section>
+{% endblock %}

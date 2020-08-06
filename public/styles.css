@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+body header,
+body main {
+    margin: 36px auto;
+    width: 940px;
+}
+
+header {
+    text-align: left;
+    margin: 36px 0px;
+}
+
+header .header-menu img {
+    margin-right: 122px;
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+
+header .header-menu a {
+    text-decoration: none;
+    color: #111;
+    margin-left: 30px;
+}
+
+main {
+    width: 940px;
+    max-width: 940px;
+}
+
+main .slider {
+    background-color: #FBDFDB;
+    width: 940px;
+    height: 366px;
+    border-radius: 30px;
+}
+
+main .slider h1 {
+    position: relative;
+    padding-top: 117px;
+    padding-left: 60px;
+}
+
+main .slider p {
+    position: relative;
+    padding-top: 10px ;
+    padding-left: 60px;
+    width: 350px;
+}
+
+
+main .slider img {
+    position: relative;
+    left: 624px;
+    right: 100px;
+    top: -170px;
+}
+
+main .info {
+    margin: 50px 0px 20px 0px;
+    font-weight: bold;
+}
+
+main section .recipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+main section .recipes .type-recipes img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+main section .recipes .type-recipes h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main section .recipes .type-recipes p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #777;
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 23px;
+    margin-top: 50px;
+    width: 100%;
+    position: static;
+}
+
+footer p {
+    color: #999;
+    font-size: 14px;
+}
+
+
+/* ===ABOUT=== */
+
+header nav .header-about-border {
+    font-weight: 700;
+}
+
+main .about-foodfy h2 {
+    padding-top: 10px;
+}
+
+main .about-foodfy h3 {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+main .about-foodfy p {
+    color: #444;
+    font-size: 18px;
+    padding: 20px 0px;
+}
+
+/* ===EXTRA CONTENT RECIPES=== */
+
+.slider-description {
+    background-color: #FBDFDB;
+    width: 940px;
+    height: 280px;
+    border-radius: 15px;
+}
+
+.slider-description img {
+    border-radius: 15px;
+}
+
+.name-recipe {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.name-recipe h3 {
+    color: #111;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.name-recipe p {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #777;
+}
+
+.stuff-description {
+    display: flex;
+}
+
+.stuff-button {
+    color: #999;
+    font: 600 12px Roboto;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.stuff-button-list {
+    margin-top: 20px;
+}
+
+#ingridient-position {
+    margin: -37px 0px 0px 145px;
+}
+
+#preparation-position {
+    margin: -37px 0px 0px 195px;
+}
+
+#extra-position {
+    margin: -37px 0px 0px 262px;
+}
+
+.fullStuff-description {
+    margin-top: 20px;
+    margin-bottom: 40px ;
+    line-height: 28px;
+    font-size: 18px;
+    color: #444;
+}
+
+.fullStuff-description li {
+    margin-left: 17px;
+}
+
+
+/* ===404=== */
+
+.not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
