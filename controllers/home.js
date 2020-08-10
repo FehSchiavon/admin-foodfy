@@ -1,6 +1,6 @@
 // Redirect
 exports.redirect = function(req, res) {
-    return res.render('/index')
+    return res.redirect('/admin/recipes')
 }
 
 // Home
