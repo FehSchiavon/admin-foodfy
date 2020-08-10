@@ -1,9 +1,9 @@
 // Redirect
 exports.redirect = function(req, res) {
-    return res.render('/')
+    return res.render('/index')
 }
 
 // Home
-exports.home = function(req, res) {
-    return res.render('/home')
-}
+// exports.home = function(req, res) {
+//     return res.render('/home')
+// }

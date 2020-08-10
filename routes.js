@@ -4,7 +4,7 @@ const home = require('./controllers/home')
 const recipes = require('./controllers/recipes')
 
 // Home
-// routes.get('/', home.redirect)
+routes.get('/', home.redirect)
 // routes.get('/home', home.index)
 
 // Recipes

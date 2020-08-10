@@ -18,6 +18,6 @@ nunjucks.configure('views', {
     noCache: true,
 })
 
-server.listen(7000, function() {
-    console.log('Server ON | Port 7000')
+server.listen(5000, function() {
+    console.log('Server ON | Port 5000')
 })
