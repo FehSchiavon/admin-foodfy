@@ -1,0 +1,58 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<title>Mais informações {{item.title}}</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="slider-description">
+    <img src="{{item.image}}" alt="">
+</div>
+
+<div class="name-recipe">
+        <h3>{{item.title}}</h3>
+        <p>{{item.author}}</p>
+</div>
+
+
+<div class="content-description">
+    <div class="stuff-description">
+        <h2 class="stuff-description">Ingredientes</h2>
+    </div>
+    
+    <div class="fullStuff-description">
+        <p class="stuff-button" id="ingridient-position" onclick="ingridient()">ESCONDER</p>
+        <ul class="stuff-button-list" style="display: block;">
+            {% for ingredients in item.ingredients %}
+                <li>{{ingredients}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="stuff-description">
+        <h2>Modo de preparo</h2>
+    </div>
+    
+    <div class="fullStuff-description">
+        <p class="stuff-button" id="preparation-position" onclick="preparation()">ESCONDER</p>
+        <ul class="stuff-button-list" style="display: block;">
+            {% for preparation in item.preparation %}
+                <li>{{preparation}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+    <div class="stuff-description">
+        <h2>Informações adicionais</h2>
+    </div>
+
+    <div class="fullStuff-description">
+        <p class="stuff-button" id="extra-position" onclick="extra()">ESCONDER</p>
+        <div class="stuff-button-list" style="display: block;">
+            <p>{{item.information | striptags(true) | escape | nl2br}}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
