@@ -1,9 +1,11 @@
+const dataOld = require('../data')
+
 exports.redirect = function(req, res) {
     return res.redirect('/index')
 }
 
 exports.index = function(req, res) {
-    return res.render('global/index')
+    return res.render('global/index', { recipes: dataOld })
 }
 
 exports.about = function(req, res) {
@@ -15,9 +17,12 @@ exports.notfound = function(req, res) {
 }
 
 exports.recipes = function(req, res) {
-    return res.render('global/recipes')
+    return res.render('global/recipes', { recipes: dataOld })
 }
 
 exports.description = function(req, res) {
-    return res.render('global/recipesDescription')
+    const recipesIndex = req.param.index
+    const recipe = recipes[recipesIndex]
+
+    return res.render('global/recipesDescription', { item: recipe })
 }
