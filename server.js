@@ -1,6 +1,6 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
-const routes = require('.routes')
+const routes = require('./routes')
 const methodOverride = require('method-override')
 
 const server = express()
@@ -18,6 +18,6 @@ nunjucks.configure('views', {
     noCache: true,
 })
 
-server.listen(7000, function() {
-    console.log('Server ON | Port 7000')
+server.listen(5000, function() {
+    console.log('Server ON | Port 5000')
 })
