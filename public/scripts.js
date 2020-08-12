@@ -50,7 +50,7 @@ const recipes = document.querySelectorAll(".type-recipes")
 
 for (let i = 0; i < recipes.length; i++) {
     recipes[i].addEventListener("click", function() {
-        window.location.href = `/recipes/${i}`
+        window.location.href = `/recipes/description/${i}`
     })
 }
 

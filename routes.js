@@ -9,7 +9,7 @@ routes.get('/index', home.index)
 routes.get('/about', home.about)
 routes.get('/not-found', home.notfound)
 routes.get('/recipes', home.recipes)
-routes.get('/recipes/description/:index', home.description)
+routes.get('/recipes/description/:id', home.description)
 
 // Recipes CRUD
 routes.get('/admin/recipes', recipes.index)
