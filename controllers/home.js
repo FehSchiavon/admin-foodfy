@@ -21,8 +21,7 @@ exports.recipes = function(req, res) {
 }
 
 exports.description = function(req, res) {
-    const recipesIndex = req.param.index
-    const recipe = recipes[recipesIndex]
-
+    const recipesId = req.params.id
+    const recipe = dataOld[recipesId]
     return res.render('global/recipesDescription', { item: recipe })
 }
