@@ -20,12 +20,19 @@ header {
     height: 80px;
 }
 
-header .logo {
+main {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+header .logo,
+main .content {
+    display: flex;
     justify-content: left;
     width: 940px;
 }
 
-header .logo img {
+main .content {
+    flex-direction: column;
 }
