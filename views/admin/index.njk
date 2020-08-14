@@ -10,4 +10,17 @@
 
 {% block content %}
     <h1>Gerenciar receitas</h1>
+
+    <div class="type-recipes" id="">
+        <img src="/global/assets/asinhas.png" alt="{{recipe.title}}">
+        <h3 class="whatRecipes">Asinhas de frango ao barbecue</h3>
+        <p class="whatNameCreator">por Vania Steroski</p>
+    </div>
+
+    {# <div class="type-recipes" id="">
+        <img src="{{recipe.image}}" alt="{{recipe.title}}">
+        <h3 class="whatRecipes">{{recipe.title}}</h3>
+        <p class="whatNameCreator">{{recipe.author}}</p>
+    </div> #}
+
 {% endblock %}
