@@ -1,5 +1,6 @@
 h1 {
-
+    font-size: 24px;
+    margin: 50px 0px 30px 0px;
 }
 
 .listRecipes {
@@ -23,4 +24,8 @@ h1 {
 .listRecipes .typeRecipes .readRecipes {
     display: flex;
     flex-direction: column;
+}
+
+.listRecipes .typeRecipes .readRecipes h3 {
+
 }
