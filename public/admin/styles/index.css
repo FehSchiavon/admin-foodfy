@@ -27,5 +27,20 @@ h1 {
 }
 
 .listRecipes .typeRecipes .readRecipes h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
 
+.listRecipes .typeRecipes .readRecipes p {
+    font-size: 14px;
+    color: #777;
+}
+
+.listRecipes .typeRecipes .readRecipes a {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #6558C3;
+    margin: 10px 0px 10px 0px;
 }
