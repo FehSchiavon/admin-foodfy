@@ -20,10 +20,16 @@ header {
     height: 80px;
 }
 
-header .logo {
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo,
+main .content {
     display: flex;
     align-items: center;
     justify-content: left;
     width: 940px;
 }
-
