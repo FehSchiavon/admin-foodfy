@@ -1,0 +1,26 @@
+h1 {
+
+}
+
+.listRecipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.listRecipes .typeRecipes {
+    display: flex;
+    flex-direction: row;
+}
+
+.listRecipes .typeRecipes img {
+    border-radius: 8.57px;
+    width: 172px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.listRecipes .typeRecipes .readRecipes {
+    display: flex;
+    flex-direction: column;
+}

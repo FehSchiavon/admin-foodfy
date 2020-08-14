@@ -29,7 +29,10 @@ main {
 header .logo,
 main .content {
     display: flex;
-    align-items: center;
     justify-content: left;
     width: 940px;
+}
+
+main .content {
+    flex-direction: column;
 }
