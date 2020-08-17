@@ -15,8 +15,52 @@
     <a href="#">Editar receita</a>
 </div>
 
-<div class="imgRecipes">
-    <img src="" alt="">
+<div class="sliderRecipes">
+    <img src="/global/assets/burger.png" alt="">
 </div>
+
+
+<div class="descriptionRecipes">
+    <h2>Triplo bacon</h2>
+    <p>por Jorge Relato</p>
+</div>
+
+<div class="contentRecipes">
+    <div class="ingredientsRecipes">
+        <h3>Ingredientes</h3>
+    </div>
+
+    <div class="detailsIngredients">
+        <ul class="detailsIngredientsList" style="display: block;">
+            {# {% for ingredients in item.ingredients %} #}
+                {# <li>{{ingredients}}</li> #}
+                <li>3 kg de carne moída (escolha uma carne magra e macia)</li>
+            {# {% endfor %} #}
+        </ul>
+    </div>
+
+    <div class="preparationRecipes">
+        <h3>Modo de preparo</h3>
+    </div>
+
+    <div class="preparationIngredients">
+        <ul class="prepationIngredientsList" style="display: block;">
+            {# {% for ingredients in item.ingredients %} #}
+                {# <li>{{ingredients}}</li> #}
+                <li>3 kg de carne moída (escolha uma carne magra e macia)</li>
+            {# {% endfor %} #}
+        </ul>
+    </div>
+
+    <div class="informationRecipes">
+        <h3>Informações adicionais</h3>
+    </div>
+
+    <div class="informationIngredients">
+        <p>Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os humbúrgues. Adicione um pouquinho de óleo ou mantega e não amasse os humbúrgueres</p>
+    </div>
+
+</div>
+
 
 {% endblock %}
