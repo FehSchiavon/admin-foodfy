@@ -47,3 +47,31 @@
     font-size: 20px;
     color: #777;
 }
+
+.contentRecipes {
+    max-width: 940px;
+}
+
+.contentRecipes .ingredientsRecipes,
+.contentRecipes .preparationRecipes,
+.contentRecipes .informationRecipes {
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 19px;
+}
+
+.contentRecipes .preparationRecipes,
+.contentRecipes .informationRecipes {
+    margin-top: 41px;
+}
+
+.contentRecipes .detailsIngredients,
+.contentRecipes .preparationIngredients,
+.contentRecipes .informationIngredients {
+    font-size: 18px;
+    color: #444;
+}
+
+.contentRecipes .detailsIngredients ul {
+
+}
