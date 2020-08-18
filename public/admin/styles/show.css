@@ -8,6 +8,7 @@
 
 .introRecipes h1 {
     font-size: 24px;
+    color: #111;
 }
 
 .introRecipes a {
@@ -30,4 +31,19 @@
     width: 100%;
     height: 100%;
     border-radius: 15px;
+}
+
+.descriptionRecipes {
+    text-align: center;
+    margin-bottom: 31px;
+}
+
+.descriptionRecipes h2 {
+    font-size: 36px;
+    color: #111;
+}
+
+.descriptionRecipes p {
+    font-size: 20px;
+    color: #777;
 }
