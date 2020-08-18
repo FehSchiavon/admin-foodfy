@@ -12,4 +12,11 @@
 
 .introRecipes a {
     text-decoration: none;
+    color: #fff;
+    background-color: #6558C3;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 9px 20px;
 }
+
+.sliderRecipes
