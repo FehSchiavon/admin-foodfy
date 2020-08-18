@@ -72,6 +72,20 @@
     color: #444;
 }
 
-.contentRecipes .detailsIngredients ul {
-
+.contentRecipes .detailsIngredients ul,
+.contentRecipes .preparationIngredients ul {
+    list-style-position: inside;
 }
+
+.contentRecipes .detailsIngredients ul li,
+.contentRecipes .preparationIngredients ul li {
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.contentRecipes .detailsIngredients ul li:before,
+.contentRecipes .preparationIngredients ul li:before {
+    content: "-";
+    padding-right: 8px;
+}
+
