@@ -2,13 +2,6 @@
     margin: 55px 0px 30px 0px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-}
-
-.introEdit .introEditButton {
-    justify-content: flex-end;
-}
-
-.introEdit .introEditButton a {
-    justify-content: flex-end;
 }
