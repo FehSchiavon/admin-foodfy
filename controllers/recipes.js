@@ -8,3 +8,8 @@ exports.index = function(req, res) {
 exports.show = function(req, res) {
     return res.render('admin/show')
 }
+
+exports.edit = function(req, res) {
+    // const { id } = req.params
+    return res.render('admin/edit')
+}
