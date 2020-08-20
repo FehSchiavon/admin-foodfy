@@ -23,3 +23,29 @@
 .introEdit .introEditButton a + a {
     background-color: #6558C3;
 }
+
+.imgEdit,
+.ingredientsEdit,
+.preparationEdit {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgEdit h2,
+.ingredientsEdit h2,
+.preparationEdit h2 {
+    font-size: 16px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.imgEdit input,
+.ingredientsEdit input,
+.preparationEdit input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #111;
+    margin-bottom: 10px;
+}
