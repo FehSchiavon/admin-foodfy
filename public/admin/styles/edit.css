@@ -52,3 +52,10 @@
     margin-bottom: 10px;
 }
 
+.ingredientsEdit a,
+.preparationEdit a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #6558C3;
+    font-weight: bold;
+}
