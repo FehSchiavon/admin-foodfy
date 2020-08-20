@@ -13,7 +13,7 @@ routes.get('/recipes/description/:id', home.description)
 
 // Recipes CRUD
 routes.get('/admin/recipes', recipes.index)
-// routes.get('/admin/recipes/create', recipes.create)
+routes.get('/admin/recipes/create', recipes.create)
 routes.get('/admin/recipes/:id', recipes.show)
 routes.get('/admin/recipes/:id/edit', recipes.edit)
 

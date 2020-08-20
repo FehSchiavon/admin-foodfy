@@ -1,0 +1,44 @@
+{% extends "admin-layout.njk" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/admin/styles/create.css">
+{% endblock %}
+
+{% block head %}
+    <title>Editando receita</title>
+{% endblock %}
+
+{% block content %}
+
+    <div class="introEdit">
+        <div class="introEditText">
+            <h1>Criando receita</h1>
+        </div>
+        <div class="introEditButton">
+            <a href="#">Salvar receita</a>
+        </div>
+    </div>
+
+    <div class="imgEdit">
+        <h2>Imagem da receita</h2>
+        <input type="text" placeholder="" name="imagem_url">
+    </div>
+
+    <div class="ingredientsEdit">
+        <h2>Ingredientes</h2>
+        <input type="text" placeholder="" name="ingredients">
+        <a href="#">Adicionar novo  ingrediente</a>
+    </div>
+
+    <div class="preparationEdit">
+        <h2>Modo de preparo</h2>
+        <input type="text" placeholder="" name="preparation">
+        <a href="#">Adicionar novo  ingrediente</a>
+    </div>
+
+    <div class="informationEdit">
+        <h2>Informações adicionais</h2>
+        <textarea placeholder="" cols="30" rows="10" name="information"></textarea>
+    </div>
+
+{% endblock %}
