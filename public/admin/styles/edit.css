@@ -26,14 +26,16 @@
 
 .imgEdit,
 .ingredientsEdit,
-.preparationEdit {
+.preparationEdit,
+.informationEdit {
     display: flex;
     flex-direction: column;
 }
 
 .imgEdit h2,
 .ingredientsEdit h2,
-.preparationEdit h2 {
+.preparationEdit h2,
+.informationEdit h2 {
     font-size: 16px;
     color: #111;
     margin: 30px 0px 10px 0px;
@@ -49,3 +51,4 @@
     color: #111;
     margin-bottom: 10px;
 }
+
