@@ -6,7 +6,6 @@ exports.index = function(req, res) {
 }
 
 exports.create = function(req, res) {
-    
     return res.render('admin/create')
 }
 
@@ -17,4 +16,18 @@ exports.show = function(req, res) {
 exports.edit = function(req, res) {
     // const { id } = req.params
     return res.render('admin/edit')
+}
+
+exports.post = function(req, res) {
+
+    const keys = Object.keys(req.body)
+    console.log(keys)
+
+    for (key of keys) {
+        if (req.body[key] == "")
+            return res.send('Please, fill all fields')
+    }
+
+    const id = Number(data.recipes.length + 1)
+
 }
