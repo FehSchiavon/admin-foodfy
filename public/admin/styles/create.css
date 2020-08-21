@@ -11,17 +11,19 @@
     color: #111;
 }
 
-.introEdit .introEditButton a {
+.introEdit .introEditButton button {
     font-size: 16px;
     color: #fff;
     text-decoration: none;
     background-color: #6558C3;
     padding: 9px 20px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 
 .imgEdit,
+.authorEdit,
 .ingredientsEdit,
 .preparationEdit,
 .informationEdit {
@@ -30,6 +32,7 @@
 }
 
 .imgEdit h2,
+.authorEdit h2,
 .ingredientsEdit h2,
 .preparationEdit h2,
 .informationEdit h2 {
@@ -39,6 +42,7 @@
 }
 
 .imgEdit input,
+.authorEdit input,
 .ingredientsEdit input,
 .preparationEdit input {
     border: 1px solid #ddd;
