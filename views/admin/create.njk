@@ -10,12 +10,15 @@
 
 {% block content %}
 
+<form action="/admin/recipes" method="POST" class="form">
+
     <div class="introEdit">
         <div class="introEditText">
             <h1>Criando receita</h1>
         </div>
         <div class="introEditButton">
             <a href="#">Salvar receita</a>
+            <button type="submit">Salvar receitas</button>
         </div>
     </div>
 
@@ -40,5 +43,7 @@
         <h2>Informações adicionais</h2>
         <textarea placeholder="" cols="30" rows="10" name="information"></textarea>
     </div>
+
+</form>
 
 {% endblock %}
