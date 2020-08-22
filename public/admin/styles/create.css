@@ -23,6 +23,7 @@
 
 
 .imgEdit,
+.titleEdit,
 .authorEdit,
 .ingredientsEdit,
 .preparationEdit,
@@ -32,6 +33,7 @@
 }
 
 .imgEdit h2,
+.titleEdit h2,
 .authorEdit h2,
 .ingredientsEdit h2,
 .preparationEdit h2,
@@ -42,6 +44,7 @@
 }
 
 .imgEdit input,
+.titleEdit input,
 .authorEdit input,
 .ingredientsEdit input,
 .preparationEdit input {
