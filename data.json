@@ -29,6 +29,15 @@
       "ingredients": "Queijo",
       "preparation": "Ralar o queijo",
       "information": "Derreter o queijo"
+    },
+    {
+      "id": 3,
+      "image": "https://images.unsplash.com/photo-1528323273322-d81458248d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1101&q=80",
+      "title": "Churrasco Grego ",
+      "author": "João Shiba",
+      "ingredients": "03 colheres de sopa",
+      "preparation": "Misturar os Ovos",
+      "information": "Fazer uma panqueca "
     }
   ]
 }
