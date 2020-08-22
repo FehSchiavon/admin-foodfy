@@ -38,9 +38,9 @@
 
     <div class="ingredientsEdit">
         <h2>Ingredientes</h2>
-        <input type="text" placeholder="12 Colheres de Chá de Açúcar" name="ingredients[]">
-        <a href="#">Adicionar novo  ingrediente</a>
-        <button type="button">Adicionar nove ingrediente</button>
+        <input type="text" class="inputIngredients" placeholder="12 Colheres de Chá de Açúcar" name="ingredients[]">
+        {# <a href="#" onclick="addIngredients()">Adicionar novo  ingrediente</a> #}
+        <button type="button" onclick="addIngredients()">Adicionar novo ingrediente</button>
     </div>
 
     <div class="preparationEdit">
@@ -60,22 +60,15 @@ manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information"
 {% endblock %}
 
 <script>
-    function addIngredient() {
-    const ingredients = document.querySelector("#ingredients");
-    const fieldContainer = document.querySelectorAll(".ingredient");
+    // const info = document.querySelector('.addIngredients').addEventListener('click')
+    // console.log('ok')
 
-    // Realiza um clone do último ingrediente adicionado
-    const newField = fieldContainer[fieldContainer.length - 1].cloneNode(true);
+    function addIngredients() {
+        console.log('OK')
+    }
 
-    // Não adiciona um novo input se o último tem um valor vazio
-    if (newField.children[0].value == "") return false;
+    //document
+        //.querySelector(".addIngredients")
+        //.addEventListener("click", addIngredient())
 
-    // Deixa o valor do input vazio
-    newField.children[0].value = "";
-    ingredients.appendChild(newField);
-}
-
-document
-  .querySelector(".add-ingredient")
-  .addEventListener("click", addIngredient);
 </script>
