@@ -61,15 +61,20 @@ manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information"
 
 <script>
 
-    // Function ADD newInput
+    // Create DOM
+    const input = document.querySelector(".inputIngredients")
+    const button = document
+        .getElementById("addIngredients")
+        .addEventListener("click", addIngredients)
 
+    // Function ADD newInput
     function addIngredients() {
-        console.log('OK')
+        if (input == "") {
+            console.log('OK')
+        }
     }
 
-    // Create DOM
-    document
-        .querySelector("#addIngredients")
-        .addEventListener("click", addIngredient())
+    
+    console.log(button)
 
 </script>
