@@ -40,7 +40,7 @@
         <h2>Ingredientes</h2>
         <input type="text" class="inputIngredients" placeholder="12 Colheres de Chá de Açúcar" name="ingredients[]">
         {# <a href="#" onclick="addIngredients()">Adicionar novo  ingrediente</a> #}
-        <button type="button" onclick="addIngredients()">Adicionar novo ingrediente</button>
+        <button type="button" id="addIngredients">Adicionar novo ingrediente</button>
     </div>
 
     <div class="preparationEdit">
@@ -60,6 +60,7 @@ manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information"
 {% endblock %}
 
 <script>
+
     // const info = document.querySelector('.addIngredients').addEventListener('click')
     // console.log('ok')
 
@@ -67,8 +68,8 @@ manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information"
         console.log('OK')
     }
 
-    //document
-        //.querySelector(".addIngredients")
-        //.addEventListener("click", addIngredient())
+    document
+        .querySelector("#addIngredients")
+        .addEventListener("click", addIngredient())
 
 </script>
