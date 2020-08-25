@@ -36,7 +36,7 @@
         <input type="text" placeholder="Mestre Shiba" name="author">
     </div>
 
-    <div class="ingredientsEdit">
+    {# <div class="ingredientsEdit">
         <h2>Ingredientes</h2>
         <div class="ingredientsEditInput">
             <div class="ingredientsEditInputAll">
@@ -44,14 +44,14 @@
             </div>
         </div>
         <button type="button" id="addIngredients">Adicionar novo ingrediente</button>
-    </div>   
+    </div>    #}
 
-    {# <div class="ingredientsEdit">
+    <div class="ingredientsEdit">
         <h2>Ingredientes</h2>
         <input type="text" class="inputIngredients" placeholder="12 Colheres de Chá de Açúcar" name="ingredients[]">
         <a href="#" onclick="addIngredients()">Adicionar novo  ingrediente</a>
         <button type="button" id="addIngredients">Adicionar novo ingrediente</button>
-    </div> #}
+    </div>
 
     <div class="preparationEdit">
         <h2>Modo de preparo</h2>
@@ -66,16 +66,5 @@ manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information"
     </div>
 
 </form>
-
-<script>
-
-// Function ADD newInput
-function addIngredient() {
-    console.log("OK")
-}
-
-document.querySelector("#addIngredients").addEventListener("click", addIngredient)
-
-</script>
 
 {% endblock %}
