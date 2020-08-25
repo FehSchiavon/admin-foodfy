@@ -38,10 +38,20 @@
 
     <div class="ingredientsEdit">
         <h2>Ingredientes</h2>
-        <input type="text" class="inputIngredients" placeholder="12 Colheres de Chá de Açúcar" name="ingredients[]">
-        {# <a href="#" onclick="addIngredients()">Adicionar novo  ingrediente</a> #}
+        <div class="ingredientsEditInput">
+            <div class="ingredientsEditInputAll">
+                <input type="text" class="inputIngredients" placeholder="12 Colheres de Chá de Açúcar" name="ingredients[]">
+            </div>
+        </div>
         <button type="button" id="addIngredients">Adicionar novo ingrediente</button>
-    </div>
+    </div>   
+
+    {# <div class="ingredientsEdit">
+        <h2>Ingredientes</h2>
+        <input type="text" class="inputIngredients" placeholder="12 Colheres de Chá de Açúcar" name="ingredients[]">
+        <a href="#" onclick="addIngredients()">Adicionar novo  ingrediente</a>
+        <button type="button" id="addIngredients">Adicionar novo ingrediente</button>
+    </div> #}
 
     <div class="preparationEdit">
         <h2>Modo de preparo</h2>
@@ -69,11 +79,19 @@ manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information"
 
     // Function ADD newInput
     function addIngredients() {
-        if (input == "") {
-            console.log('OK')
-        }
+        const ingredients = document.querySelector('.ingredientsEdit')
+        const fieldCointainer = document.querySelectorAll('.ingredientsEditInput')
+
+        // Clone do último ingrediente adicionado
+        const newField = fieldCointainer[fieldCointainer.length - 1].cloneNode(true)
+
+        // Não add novo input se último estiver vazio
+        if (newField.children[0].value == "") return false
+
+        // Deixa o valor do input vazio
+        newField.children[0].value = ""
+        ingredients.appendChild(newField)
     }
 
-    console.log(button)
 
 </script>
