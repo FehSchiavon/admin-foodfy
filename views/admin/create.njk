@@ -70,22 +70,11 @@ manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information"
 <script>
 
     // Function ADD newInput
-    function addIngredients() {
-        const ingredients = document.querySelector('.ingredientsEdit')
-        const fieldCointainer = document.querySelectorAll('.ingredientsEditInput')
-
-        // Clone do último ingrediente adicionado
-        const newField = fieldCointainer[fieldCointainer.length - 1].cloneNode(true)
-
-        // Não add novo input se último estiver vazio
-        if (newField.children[0].value == "") return false
-
-        // Deixa o valor do input vazio
-        newField.children[0].value = ""
-        ingredients.appendChild(newField)
+    function addIngredient() {
+        console.log("OK")
     }
 
-    document.querySelectorAll("#addIngredients").addEventListener("click", addIngredients)
+    document.querySelectorAll("#addIngredients").addEventListener("click", addIngredient)
 
 </script>
 
