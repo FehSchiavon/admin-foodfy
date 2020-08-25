@@ -67,15 +67,7 @@ manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information"
 
 </form>
 
-{% endblock %}
-
 <script>
-
-    // Create DOM
-    const input = document.querySelector(".inputIngredients")
-    const button = document
-        .getElementById("addIngredients")
-        .addEventListener("click", addIngredients)
 
     // Function ADD newInput
     function addIngredients() {
@@ -93,5 +85,8 @@ manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information"
         ingredients.appendChild(newField)
     }
 
+    document.querySelectorAll("#addIngredients").addEventListener("click", addIngredients)
 
 </script>
+
+{% endblock %}
