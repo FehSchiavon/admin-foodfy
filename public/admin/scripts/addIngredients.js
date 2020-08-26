@@ -1,9 +1,21 @@
 // Function ADD newInput
 function addIngredient() {
-    const ingredients = document.querySelector(".ingredientsEdit")
+    // const fieldContainer = document.createElement("input")
+    // document.body.appendChild(fieldContainer)
+
+    const ingredients = document.querySelector(".ingredientsEditInput")
     const fieldContainer = document.querySelector(".inputIngredients")
 
-    const newField = fieldContainer[fieldContainer.lenght - 1].cloneNode(true)
+    // Clone último ingrediente
+    const newField = fieldContainer.cloneNode(true)
+    const lengthField = fieldContainer[fieldContainer.length - 1]
+    console.log(lengthField)
+
+    // if (newField.children[0].value == "") return false
+
+    // newField.children[0].value == ""
+    ingredients.appendChild(newField)
+
     console.log("OK")
 }
 
