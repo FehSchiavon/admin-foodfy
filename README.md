@@ -1,4 +1,4 @@
-![print_foodfy](https://user-images)
+
 
 ## **About this project**
 In this challenge, an administrative area was created for Foodfy, responsible for registering, editing and deleting data.
