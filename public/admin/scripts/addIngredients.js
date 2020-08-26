@@ -4,7 +4,7 @@ function addIngredient() {
     // document.body.appendChild(fieldContainer)
 
     const ingredients = document.querySelector(".ingredientsEditInput")
-    const fieldContainer = document.querySelector(".inputIngredients")
+    const fieldContainer = document.querySelectorAll(".inputIngredients")
 
     // Clone último ingrediente
     const newField = fieldContainer.cloneNode(true)
