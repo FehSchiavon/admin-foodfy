@@ -14,7 +14,6 @@ function addIngredient() {
     newField.children[0].value = ""
     ingredients.appendChild(newField)
 
-    console.log("OK")
 }
 
 document.querySelector("#addIngredients").addEventListener("click", addIngredient)

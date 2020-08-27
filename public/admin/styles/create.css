@@ -54,14 +54,16 @@
     font-size: 16px;
     color: #111;
     margin-bottom: 10px;
+    width: 100%;
 }
 
-.ingredientsEdit a,
+.ingredientsEdit button,
 .preparationEdit a {
-    text-decoration: none;
+    background-color: #fff;
     font-size: 16px;
     color: #6558C3;
     font-weight: bold;
+    text-align: left;
 }
 
 .informationEdit textarea {
