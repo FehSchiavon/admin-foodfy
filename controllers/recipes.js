@@ -2,7 +2,15 @@ const fs = require('fs')
 const data = require('../data.json')
 
 exports.index = function(req, res) {
-    return res.render('admin/index')
+    const recipesAll = data.recipes.map(function(recipe) {
+        const recipesPart = {
+            ...recipe
+        }
+        return recipesPart
+    })
+    console.log(recipesAll)
+
+    return res.render('admin/index', { recipes: recipesAll })
 }
 
 exports.create = function(req, res) {

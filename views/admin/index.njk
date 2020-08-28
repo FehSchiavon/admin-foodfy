@@ -13,37 +13,23 @@
 
     <div class="listRecipes">
         <div class="typeRecipes" id="">
-            <img src="/global/assets/asinhas.png" alt="{{recipe.title}}">
+            <img src="/global/assets/asinhas.png" alt="">
             <div class="readRecipes">
                 <h3 class="whatRecipes">Asinhas de frango ao barbecue</h3>
                 <p class="whatNameCreator">por Vania Steroski</p>
                 <a href="">Visualizar</a>
             </div>
         </div>
-
+        {% for recipe in recipes %}
         <div class="typeRecipes" id="">
-            <img src="/global/assets/asinhas.png" alt="{{recipe.title}}">
+            <img src="{{recipe.image}}" alt="{{recipe.title}}">
             <div class="readRecipes">
-                <h3 class="whatRecipes">Asinhas de frango ao barbecue</h3>
-                <p class="whatNameCreator">por Vania Steroski</p>
+                <h3 class="whatRecipes">{{ recipe.title }}</h3>
+                <p class="whatNameCreator">{{ recipe.author }}</p>
                 <a href="">Visualizar</a>
             </div>
         </div>
-
-        <div class="typeRecipes" id="">
-            <img src="/global/assets/asinhas.png" alt="{{recipe.title}}">
-            <div class="readRecipes">
-                <h3 class="whatRecipes">Asinhas de frango ao barbecue</h3>
-                <p class="whatNameCreator">por Vania Steroski</p>
-                <a href="">Visualizar</a>
-            </div>
-        </div>
+        {% endfor %}
     </div>
-
-    {# <div class="type-recipes" id="">
-        <img src="{{recipe.image}}" alt="{{recipe.title}}">
-        <h3 class="whatRecipes">{{recipe.title}}</h3>
-        <p class="whatNameCreator">{{recipe.author}}</p>
-    </div> #}
 
 {% endblock %}
