@@ -10,7 +10,7 @@ exports.index = function(req, res) {
     })
     console.log(recipesAll)
 
-    return res.render('admin/index')
+    return res.render('admin/index', { recipes: recipesAll })
 }
 
 exports.create = function(req, res) {
