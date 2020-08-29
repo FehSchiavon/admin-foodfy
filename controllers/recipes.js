@@ -21,14 +21,16 @@ exports.show = function(req, res) {
     console.log(id)
 
     const foundRecipes = data.recipes.find(function(recipe) {
-        return id = recipe.id
+        return id == recipe.id
     })
+    console.log(foundRecipes)
 
-    if (!foundRecipes) return res.send('Recipe not found!')
+    // if (!foundRecipes) return res.send('Recipe not found!')
 
     const recipe = {
         ...foundRecipes
     }
+    console.log(recipe)
 
     return res.render('admin/show', { recipe })
 }
