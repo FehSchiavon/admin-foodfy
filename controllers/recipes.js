@@ -8,7 +8,6 @@ exports.index = function(req, res) {
         }
         return recipesPart
     })
-    console.log(recipesAll)
 
     return res.render('admin/index', { recipes: recipesAll })
 }
