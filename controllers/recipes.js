@@ -8,7 +8,6 @@ exports.index = function(req, res) {
         }
         return recipesPart
     })
-    console.log(recipesAll)
 
     return res.render('admin/index', { recipes: recipesAll })
 }
@@ -18,7 +17,22 @@ exports.create = function(req, res) {
 }
 
 exports.show = function(req, res) {
-    return res.render('admin/show')
+    const { id } = req.params
+    console.log(id)
+
+    const foundRecipes = data.recipes.find(function(recipe) {
+        return id == recipe.id
+    })
+    console.log(foundRecipes)
+
+    if (!foundRecipes) return res.send('Recipe not found!')
+
+    const recipe = {
+        ...foundRecipes
+    }
+    console.log(recipe)
+
+    return res.render('admin/show', { recipe })
 }
 
 exports.edit = function(req, res) {
