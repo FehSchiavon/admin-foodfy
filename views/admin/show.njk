@@ -11,7 +11,7 @@
 {% block content %}
 
 <div class="introRecipes">
-    <h1>Receitas: Tripo Bacon Burger</h1>
+    <h1>Receitas: {{ recipe.title }}</h1>
     <a href="#">Editar receita</a>
 </div>
 
@@ -32,13 +32,13 @@
 
     <div class="detailsIngredients">
         <ul class="detailsIngredientsList" style="display: block;">
-            {# {% for ingredients in item.ingredients %} #}
-                {# <li>{{ingredients}}</li> #}
+            {% for ingredients in item.ingredients %}
+                <li>{{ingredients}}</li>
                 <li>3 kg de carne moída (escolha uma carne magra e macia)</li>
                 <li>3 kg de carne moída (escolha uma carne magra e macia)</li>
                 <li>3 kg de carne moída (escolha uma carne magra e macia)</li>
                 <li>3 kg de carne moída (escolha uma carne magra e macia)</li>
-            {# {% endfor %} #}
+            {% endfor %}
         </ul>
     </div>
 
@@ -48,13 +48,13 @@
 
     <div class="preparationIngredients">
         <ul class="prepationIngredientsList" style="display: block;">
-            {# {% for ingredients in item.ingredients %} #}
-                {# <li>{{ingredients}}</li> #}
+            {% for ingredients in item.ingredients %}
+                <li>{{ingredients}}</li>
                 <li>3 kg de carne moída (escolha uma carne magra e macia)</li>
                 <li>3 kg de carne moída (escolha uma carne magra e macia)</li>
                 <li>3 kg de carne moída (escolha uma carne magra e macia)</li>
                 <li>3 kg de carne moída (escolha uma carne magra e macia)</li>
-            {# {% endfor %} #}
+            {% endfor %}
         </ul>
     </div>
 
