@@ -17,7 +17,20 @@ exports.create = function(req, res) {
 }
 
 exports.show = function(req, res) {
-    return res.render('admin/show')
+    const { id } = req.params
+    console.log(id)
+
+    const foundRecipes = data.recipes.find(function(recipe) {
+        return id = recipe.id
+    })
+
+    if (!foundRecipes) return res.send('Recipe not found!')
+
+    const recipe = {
+        ...foundRecipes
+    }
+
+    return res.render('admin/show', { recipe })
 }
 
 exports.edit = function(req, res) {
