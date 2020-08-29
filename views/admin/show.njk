@@ -12,7 +12,7 @@
 
 <div class="introRecipes">
     <h1>Receitas: {{ recipe.title }}</h1>
-    <a href="#">Editar receita</a>
+    <a href="/admin/recipe/{{ recipe.id }}">Editar receita</a>
 </div>
 
 <div class="sliderRecipes">
@@ -55,7 +55,7 @@
     </div>
 
     <div class="informationIngredients">
-        <span>{{ recipe.information }}</span>
+        <span>{{ recipe.information | striptags(true) | escape | nl2br }}</span>
     </div>
 
 </div>

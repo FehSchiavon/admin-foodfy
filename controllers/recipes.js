@@ -25,7 +25,7 @@ exports.show = function(req, res) {
     })
     console.log(foundRecipes)
 
-    // if (!foundRecipes) return res.send('Recipe not found!')
+    if (!foundRecipes) return res.send('Recipe not found!')
 
     const recipe = {
         ...foundRecipes
