@@ -33,8 +33,19 @@ exports.show = function(req, res) {
 }
 
 exports.edit = function(req, res) {
-    // const { id } = req.params
-    return res.render('admin/edit')
+    const { id } =req.params
+
+    const foundRecipes = data.recipes.find(function(recipe) {
+        return id == recipe.id
+    })
+
+    if (!foundRecipes) return res.send('Recipe not found!')
+
+    const recipes = {
+        ...foundRecipes
+    }
+
+    return res.render('admin/edit', { recipes })
 }
 
 exports.post = function(req, res) {
