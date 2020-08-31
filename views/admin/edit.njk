@@ -24,25 +24,27 @@
 
         <div class="imgEdit">
             <h2>Imagem da receita</h2>
-            <input type="url" placeholder="http://" name="image">
+            <input type="url" placeholder="http://" name="image" value="{{ recipe.image }}">
         </div>
 
         <div class="titleEdit">
             <h2>Nome da receita</h2>
-            <input type="text" placeholder="Churrasco Grego" name="title">
+            <input type="text" placeholder="Churrasco Grego" name="title" value="{{ recipe.title }}">
         </div>
 
         <div class="authorEdit">
             <h2>Criador da receita</h2>
-            <input type="text" placeholder="Mestre Shiba" name="author">
+            <input type="text" placeholder="Mestre Shiba" name="author" value="{{ recipe.author }}">
         </div>
 
         <div class="ingredientsEdit">
             <h2>Ingredientes</h2>
             <div class="ingredientsEditInputAll">
+                {% for ingredients in recipe.ingredients %}
                 <div class="ingredientsEditInput">
-                    <input type="text" placeholder="12 Colheres de Chá de Açúcar" name="ingredients[]" value="">
+                    <input type="text" placeholder="12 Colheres de Chá de Açúcar" name="ingredients[]" value="{{ ingredients }}">
                 </div>
+                {% endfor %}
             </div>
             <button type="button" id="addIngredients">Adicionar novo ingrediente</button>
         </div>   
@@ -50,16 +52,18 @@
         <div class="preparationEdit">
             <h2>Modo de preparo</h2>
             <div class="preparationEditInputAll">
+                {% for preparation in recipe.preparation %}
                 <div class="preparationEditInput">
-                    <input type="text" placeholder="12 Colheres de Chá de Açúcar" name="preparation[]" value="">
+                    <input type="text" placeholder="12 Colheres de Chá de Açúcar" name="preparation[]" value="{{ preparation }}">
                 </div>
+                {% endfor %}
             </div>
             <button type="button" id="addPreparation">Adicionar novo passo</button>
         </div>   
 
         <div class="informationEdit">
             <h2>Informações adicionais</h2>
-            <textarea placeholder="Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information"></textarea>
+            <textarea placeholder="Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information">{{ recipe.information }}</textarea>
         </div>
 
     </form>
