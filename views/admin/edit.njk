@@ -20,29 +20,57 @@
         </div>
     </div>
 
-    <div class="imgEdit">
-        <h2>Imagem da receita</h2>
-        <input type="text" placeholder="https://images.unsplash.com/photo-1513104890138-7c749659a591" name="imagem_url">
-    </div>
+    <form action="/admin/recipes" method="POST" class="form">
 
-    <div class="ingredientsEdit">
-        <h2>Ingredientes</h2>
-        <input type="text" placeholder="3kg de carne moída (escolha uma carne magra e macia);" name="ingredients">
-        <input type="text" placeholder="300g de bacon moído;" name="ingredients">
-        <a href="#">Adicionar novo  ingrediente</a>
-    </div>
+        <div class="introEdit">
+            <div class="introEditText">
+                <h1>Criando receita</h1>
+            </div>
+            <div class="introEditButton">
+                <button type="submit">Salvar receitas</button>
+            </div>
+        </div>
 
-    <div class="preparationEdit">
-        <h2>Modo de preparo</h2>
-        <input type="text" placeholder="Misture a carne com temperos de sua escolha" name="preparation">
-        <input type="text" placeholder="Coloque a carne na churrasqueira por 2 minutos cada lado" name="preparation">
-        <a href="#">Adicionar novo  ingrediente</a>
-    </div>
+        <div class="imgEdit">
+            <h2>Imagem da receita</h2>
+            <input type="url" placeholder="http://" name="image">
+        </div>
 
-    <div class="informationEdit">
-        <h2>Informações adicionais</h2>
-        <textarea placeholder="Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou 
-manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information"></textarea>
-    </div>
+        <div class="titleEdit">
+            <h2>Nome da receita</h2>
+            <input type="text" placeholder="Churrasco Grego" name="title">
+        </div>
+
+        <div class="authorEdit">
+            <h2>Criador da receita</h2>
+            <input type="text" placeholder="Mestre Shiba" name="author">
+        </div>
+
+        <div class="ingredientsEdit">
+            <h2>Ingredientes</h2>
+            <div class="ingredientsEditInputAll">
+                <div class="ingredientsEditInput">
+                    <input type="text" placeholder="12 Colheres de Chá de Açúcar" name="ingredients[]" value="">
+                </div>
+            </div>
+            <button type="button" id="addIngredients">Adicionar novo ingrediente</button>
+        </div>   
+
+        <div class="preparationEdit">
+            <h2>Modo de preparo</h2>
+            <div class="preparationEditInputAll">
+                <div class="preparationEditInput">
+                    <input type="text" placeholder="12 Colheres de Chá de Açúcar" name="preparation[]" value="">
+                </div>
+            </div>
+            <button type="button" id="addPreparation">Adicionar novo passo</button>
+        </div>   
+
+        <div class="informationEdit">
+            <h2>Informações adicionais</h2>
+            <textarea placeholder="Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information"></textarea>
+        </div>
+
+    </form>
 
 {% endblock %}
