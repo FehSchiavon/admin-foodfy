@@ -11,7 +11,7 @@
     color: #111;
 }
 
-.introEdit .introEditButton a {
+.introEdit .introEditButton button {
     font-size: 16px;
     color: #fff;
     text-decoration: none;
@@ -20,7 +20,7 @@
     border-radius: 4px;
 }
 
-.introEdit .introEditButton a + a {
+.introEdit .introEditButton button + button {
     background-color: #6558C3;
 }
 
