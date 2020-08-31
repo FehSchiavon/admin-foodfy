@@ -10,23 +10,14 @@
 
 {% block content %}
 
-    <div class="introEdit">
-        <div class="introEditText">
-            <h1>Editando receita</h1>
-        </div>
-        <div class="introEditButton">
-            <a href="#">Deletar</a>
-            <a href="#">Salvar receita</a>
-        </div>
-    </div>
-
     <form action="/admin/recipes?_method=PUT" method="POST" class="form">
 
         <div class="introEdit">
             <div class="introEditText">
-                <h1>Criando receita</h1>
+                <h1>Editando receita</h1>
             </div>
             <div class="introEditButton">
+                <button>Deletar</button>
                 <button type="submit">Salvar receitas</button>
             </div>
         </div>
