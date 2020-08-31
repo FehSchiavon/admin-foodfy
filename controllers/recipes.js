@@ -90,6 +90,9 @@ exports.put = function(req, res) {
         } 
     })
 
+    console.log(index)
+    console.log(id)
+
     if (!foundRecipes) return res.send('Recipe not found!')
 
     const recipe = {
