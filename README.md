@@ -6,9 +6,6 @@ In this challenge, an administrative area was created for Foodfy, responsible fo
 ## **Challenge**
 https://github.com/Rocketseat/bootcamp-launchbase-desafios-04/blob/master/desafios/04-admin-foodfy.md
 
-## Index: Prints
-
-
 
 ## **Technologies**
 The project was created with:
