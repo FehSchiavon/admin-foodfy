@@ -80,7 +80,7 @@ exports.post = function(req, res) {
 }
 
 exports.put = function(req, res) {
-    const { id } = req.body
+    const { id } = req.body // Id esta vindo errado
     let index = 0 
 
     const foundRecipes = data.recipes.find(function(recipe, foundIndex) {
