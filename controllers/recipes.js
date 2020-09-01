@@ -100,6 +100,7 @@ exports.put = function(req, res) {
         ...req.params,
         id: Number(req.body.id)
     }
+    console.log(recipe)
 
     data.recipes[index] = recipe
 
