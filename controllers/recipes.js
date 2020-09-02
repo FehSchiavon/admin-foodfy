@@ -81,6 +81,7 @@ exports.post = function(req, res) {
 
 exports.put = function(req, res) {
     const { id } = req.body // Id esta vindo errado
+    console.log(id)
     let index = 0 
 
     const foundRecipes = data.recipes.find(function(recipe, foundIndex) {
@@ -89,9 +90,6 @@ exports.put = function(req, res) {
             return true
         } 
     })
-
-    console.log(index)
-    console.log(id)
 
     if (!foundRecipes) return res.send('Recipe not found!')
 
