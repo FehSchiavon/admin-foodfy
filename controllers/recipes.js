@@ -1,5 +1,6 @@
 const fs = require('fs')
 const data = require('../data.json')
+const { ingredients } = require('../utils')
 
 exports.index = function(req, res) {
     const recipesAll = data.recipes.map(function(recipe) {
@@ -95,8 +96,9 @@ exports.put = function(req, res) {
 
     const recipe = {
         ...foundRecipes,
-        ...req.params,
-        id: Number(req.body.id)
+        ...req.body,
+        id: Number(req.body.id),
+        // ingredients: 
     }
     console.log(recipe)
 

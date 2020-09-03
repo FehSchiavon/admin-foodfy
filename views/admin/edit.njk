@@ -66,6 +66,8 @@
             <textarea placeholder="Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres!" cols="30" rows="10" name="information">{{ recipe.information }}</textarea>
         </div>
 
+        <input type="hidden" name="id" value="{{ recipe.id }}">
+
     </form>
 
 {% endblock %}
