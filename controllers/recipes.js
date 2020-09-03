@@ -98,7 +98,7 @@ exports.put = function(req, res) {
         ...foundRecipes,
         ...req.body,
         id: Number(req.body.id),
-        // ingredients: 
+        // ingredients: foundRecipes.ingredients,
     }
     console.log(recipe)
 
