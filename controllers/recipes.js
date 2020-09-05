@@ -1,6 +1,6 @@
 const fs = require('fs')
 const data = require('../data.json')
-const { ingredients } = require('../utils')
+const { ingredients, preparation } = require('../utils')
 
 exports.index = function(req, res) {
     const recipesAll = data.recipes.map(function(recipe) {
@@ -52,7 +52,7 @@ exports.edit = function(req, res) {
 exports.post = function(req, res) {
 
     const keys = Object.keys(req.body)
-    console.log(keys)
+    // console.log(keys)
 
     for (key of keys) {
         if (req.body[key] == "")
@@ -98,12 +98,13 @@ exports.put = function(req, res) {
         ...foundRecipes,
         ...req.body,
         id: Number(req.body.id),
-        ingredients: ingredients()
+        ingredients: ingredients(foundRecipes.ingredients),
+        preparation: preparation(foundRecipes.preparation),
     }
-    console.log(recipe)
+    console.log(foundRecipes.preparation)
 
     data.recipes[index] = recipe
-
+    
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
         if (err) return res.send('Write error!')
 
