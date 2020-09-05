@@ -98,9 +98,9 @@ exports.put = function(req, res) {
         ...foundRecipes,
         ...req.body,
         id: Number(req.body.id),
-        ingredients: ingredients()
+        ingredients: ingredients(foundRecipes.ingredients)
     }
-    console.log(recipe)
+    // console.log(foundRecipes.ingredients)
 
     data.recipes[index] = recipe
     

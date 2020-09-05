@@ -1,5 +1,7 @@
 module.exports = {
-    ingredients: function (inputs) {
-        console.log(inputs)
+    ingredients: function (validationInputs) {
+        let ingredients = validationInputs
+        console.log(ingredients)
+        return ingredients
     }
 }
