@@ -52,7 +52,7 @@ exports.edit = function(req, res) {
 exports.post = function(req, res) {
 
     const keys = Object.keys(req.body)
-    console.log(keys)
+    // console.log(keys)
 
     for (key of keys) {
         if (req.body[key] == "")
@@ -103,7 +103,7 @@ exports.put = function(req, res) {
     console.log(recipe)
 
     data.recipes[index] = recipe
-
+    
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
         if (err) return res.send('Write error!')
 
