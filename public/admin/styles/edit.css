@@ -34,17 +34,31 @@
     flex-direction: column;
 }
 
-.ingredientsEdit .ingredientsEditInputAll .ingredientsEditInput {
+/* Inputs Delete */
+.ingredientsEdit .ingredientsEditInputAll .ingredientsEditInput,
+.preparationEdit .preparationEditInputAll .preparationEditInput {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    box-sizing: content-box;
+    width: 980px;
 }
 
-.ingredientsEdit .ingredientsEditInputAll .ingredientsEditInput span {
-    box-sizing: border-box;
+.ingredientsEdit .ingredientsEditInputAll .ingredientsEditInput span,
+.preparationEdit .preparationEditInputAll .preparationEditInput span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: #fff;
+    border: 1px solid #DC4747;
+    background-color: #DC4747;
+    padding: 15px 20px;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    font-weight: bold;
 }
+/* End Inputs Delete */
 
 .imgEdit h2,
 .titleEdit h2,
@@ -70,7 +84,10 @@
     margin-bottom: 10px;
     width: 100%;
 }
-
+.ingredientsEdit input,
+.preparationEdit input {
+    border-radius: 4px 0px 0px 4px;
+}
 .ingredientsEdit button,
 .preparationEdit button {
     background-color: #fff;

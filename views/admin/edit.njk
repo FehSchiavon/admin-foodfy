@@ -43,7 +43,7 @@
                 {% for ingredients in recipe.ingredients %}
                 <div class="ingredientsEditInput">
                     <input type="text" placeholder="12 Colheres de Chá de Açúcar" name="ingredients[]" value="{{ ingredients }}">
-                    <span>&times;</span>
+                    <span id="closeIngredients" >&times;</span>
                 </div>
                 {% endfor %}
             </div>
@@ -56,6 +56,7 @@
                 {% for preparation in recipe.preparation %}
                 <div class="preparationEditInput">
                     <input type="text" placeholder="12 Colheres de Chá de Açúcar" name="preparation[]" value="{{ preparation }}">
+                    <span id="closePreparation" >&times;</span>
                 </div>
                 {% endfor %}
             </div>
