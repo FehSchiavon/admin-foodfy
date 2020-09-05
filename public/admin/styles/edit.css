@@ -34,6 +34,18 @@
     flex-direction: column;
 }
 
+.ingredientsEdit .ingredientsEditInputAll .ingredientsEditInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+}
+
+.ingredientsEdit .ingredientsEditInputAll .ingredientsEditInput span {
+    box-sizing: border-box;
+}
+
 .imgEdit h2,
 .titleEdit h2,
 .authorEdit h2,
