@@ -1,7 +1,12 @@
 module.exports = {
     ingredients: function (validationInputs) {
-        let ingredients = validationInputs
-        console.log(ingredients)
+
+        function filterIngredients(ingredients) {
+            return ingredients != ""
+        }
+
+        let ingredients = validationInputs.filter(filterIngredients)    
+
         return ingredients
     }
 }
