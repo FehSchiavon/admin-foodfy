@@ -17,6 +17,8 @@ function deleteInputs(elementId) {
     element.parentNode.removeChild(element);
 }
 
+// Puxando numero dos Array
+
 let removeInputs = document.getElementsByClassName("closeIngredients")
 console.log(removeInputs.length)
 
