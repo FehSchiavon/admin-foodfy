@@ -1,6 +1,9 @@
-// Create Function Delete
-function addIngredient() {
-    console.log("OK")
+// Search
+let closeIngredients = document.getElementsByClassName("closeIngredients")
+let i;
+
+for (i = 0; i < closeIngredients.length; i++) {
+    closeIngredients[i].addEventListener("click", function() {
+        this.parentElement.style.display = "none";
+    })
 }
-// Array Search delete
-document.querySelectorAll("#closeIngredients").addEventListener("click", addIngredient)
