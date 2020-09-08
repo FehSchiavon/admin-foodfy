@@ -30,8 +30,10 @@ for (i = 0; i < removeInputs.length; i++) {
     })
 }
 
+// Remove apenas um elemento e depois quebra função
 for (Inputs of removeInputs) {
     Inputs.addEventListener("click", function() {
+        Inputs.parentNode.removeChild(Inputs)
         console.log(Inputs)
     })
 }
