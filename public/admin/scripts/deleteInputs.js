@@ -24,6 +24,14 @@ console.log(removeInputs.length)
 
 for (i = 0; i < removeInputs.length; i++) {
     removeInputs[i].addEventListener("click", function() {
-        console.log(i)
+        // let element = document.getElementsByClassName("closeIngredients")
+        // element.parentNode.removeChild(element)
+        // console.log(i)
+    })
+}
+
+for (Inputs of removeInputs) {
+    Inputs.addEventListener("click", function() {
+        console.log(Inputs)
     })
 }
