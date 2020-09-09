@@ -8,18 +8,19 @@ function deleteInputs(elementId) {
 
 // Puxando numero dos Array
 
-let removeInputs = document.getElementsByClassName("closeIngredients")
-console.log(removeInputs.length)
+let removeInputsIngredients = document.getElementsByClassName("closeIngredients")
+console.log(removeInputsIngredients.length)
 
-for (let i = 0; i < removeInputs.length; i++) {
-    removeInputs[i].addEventListener("click", function() {
-        this.parentElement.style.display = 'none'
-        console.log(this.parentElement)
-        // this.parentElement.removeChild(this.parentElement)
+for (let i = 0; i < removeInputsIngredients.length; i++) {
+    removeInputsIngredients[i].addEventListener("click", function() {
 
-        // Tentando Remover
-        // this[i].parentElement.removeChild(this[i])
+        // Remove mesmo a DIV
+        let parentInputsIngredients = this.parentElement
+        parentInputsIngredients.parentNode.removeChild(parentInputsIngredients)
 
-        console.log(i)
+        // Deixa somente Invisivel
+        // this.parentElement.style.display = 'none'
+        // console.log(this.parentElement)
+
     })
 }
