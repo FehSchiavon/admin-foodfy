@@ -1,13 +1,4 @@
-// Tentando outra ideia
-
-function deleteInputs(elementId) {
-    // Removes an element from the document
-    var element = document.getElementById(elementId);
-    element.parentNode.removeChild(element);
-}
-
-// Puxando numero dos Array
-
+// Remove Inputs Ingredients
 let removeInputsIngredients = document.getElementsByClassName("closeIngredients")
 console.log(removeInputsIngredients.length)
 
@@ -17,6 +8,24 @@ for (let i = 0; i < removeInputsIngredients.length; i++) {
         // Remove mesmo a DIV
         let parentInputsIngredients = this.parentElement
         parentInputsIngredients.parentNode.removeChild(parentInputsIngredients)
+
+        // Deixa somente Invisivel
+        // this.parentElement.style.display = 'none'
+        // console.log(this.parentElement)
+
+    })
+}
+
+// Remove Inputs Preparation
+let removeInputsPreparation = document.getElementsByClassName("closePreparation")
+console.log(removeInputsPreparation.length)
+
+for (let i = 0; i < removeInputsPreparation.length; i++) {
+    removeInputsPreparation[i].addEventListener("click", function() {
+
+        // Remove mesmo a DIV
+        let parentInputsPreparation = this.parentElement
+        parentInputsPreparation.parentNode.removeChild(parentInputsPreparation)
 
         // Deixa somente Invisivel
         // this.parentElement.style.display = 'none'
