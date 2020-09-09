@@ -1,36 +1,30 @@
-// Search
-// let closeIngredients = document.getElementsByClassName("closeIngredients")
-// let i;
+// Remove Inputs Ingredients
+let removeInputsIngredients = document.getElementsByClassName("closeIngredients")
+// console.log(removeInputsIngredients.length)
 
-// for (i = 0; i < closeIngredients.length; i++) {
-//     closeIngredients[i].addEventListener("click", function() {
-//         this.parentElement.style.display = "none";
-//     })
-// }
+for (let i = 0; i < removeInputsIngredients.length; i++) {
+    removeInputsIngredients[i].addEventListener("click", function() {
 
+        // Remove mesmo a DIV
+        let parentInputsIngredients = this.parentElement
+        parentInputsIngredients.parentNode.removeChild(parentInputsIngredients)
 
-// Tentando outra ideia
+        // Deixa somente Invisivel
+        // this.parentElement.style.display = 'none'
+        // console.log(this.parentElement)
 
-function deleteInputs(elementId) {
-    // Removes an element from the document
-    var element = document.getElementById(elementId);
-    element.parentNode.removeChild(element);
+    })
 }
 
-// Puxando numero dos Array
+// Remove Inputs Preparation
+let removeInputsPreparation = document.querySelectorAll("#closePreparation")
+console.log(removeInputsPreparation.length)
 
-let removeInputs = document.getElementsByClassName("closeIngredients")
-console.log(removeInputs.length)
+for (let i = 0; i < removeInputsPreparation.length; i++) {
+    removeInputsPreparation[i].addEventListener("click", function() {
 
-for (let i = 0; i < removeInputs.length; i++) {
-    removeInputs[i].addEventListener("click", function() {
-        this.parentElement.style.display = 'none'
-        console.log(this.parentElement)
-        // this.parentElement.removeChild(this.parentElement)
+        let parentInputsPreparation = this.parentElement
+        parentInputsPreparation.parentNode.removeChild(parentInputsPreparation)
 
-        // Tentando Remover
-        // this[i].parentElement.removeChild(this[i])
-
-        console.log(i)
     })
 }
