@@ -25,7 +25,8 @@ console.log(removeInputs.length)
 for (let i = 0; i < removeInputs.length; i++) {
     removeInputs[i].addEventListener("click", function() {
         this.parentElement.style.display = 'none'
-        this.parentElement.value=""
+        console.log(this.parentElement)
+        // this.parentElement.removeChild(this.parentElement)
 
         // Tentando Remover
         // this[i].parentElement.removeChild(this[i])
