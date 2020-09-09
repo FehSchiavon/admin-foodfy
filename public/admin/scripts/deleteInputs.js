@@ -22,18 +22,14 @@ function deleteInputs(elementId) {
 let removeInputs = document.getElementsByClassName("closeIngredients")
 console.log(removeInputs.length)
 
-for (i = 0; i < removeInputs.length; i++) {
+for (let i = 0; i < removeInputs.length; i++) {
     removeInputs[i].addEventListener("click", function() {
-        // let element = document.getElementsByClassName("closeIngredients")
-        // element.parentNode.removeChild(element)
-        // console.log(i)
-    })
-}
+        this.parentElement.style.display = 'none'
+        this.parentElement.value=""
 
-// Remove apenas um elemento e depois quebra função
-for (Inputs of removeInputs) {
-    Inputs.addEventListener("click", function() {
-        Inputs.parentNode.removeChild(Inputs)
-        console.log(Inputs)
+        // Tentando Remover
+        // this[i].parentElement.removeChild(this[i])
+
+        console.log(i)
     })
 }
