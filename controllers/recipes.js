@@ -112,3 +112,19 @@ exports.put = function(req, res) {
     })
 
 }
+
+exports.delete = function(req, res) {
+    const { id } = req.body
+    console.log(id)
+
+    const filterRecipes = data.recipes.filter(function(recipe) {
+        return recipe.id != id
+    })
+
+    data.students = filterRecipes
+
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
+        if(err) return res.send('Write file error!')
+        return res.redirect("admin/index")
+    })
+}
