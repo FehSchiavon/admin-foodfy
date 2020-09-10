@@ -1,4 +1,7 @@
 // Remove Inputs Ingredients
+let removeInputsIngredients = document.getElementsByClassName("closeIngredients")
+// console.log(removeInputsIngredients.length)
+
 for (let i = 0; i < removeInputsIngredients.length; i++) {
     removeInputsIngredients[i].addEventListener("click", function() {
         
@@ -13,12 +16,11 @@ for (let i = 0; i < removeInputsIngredients.length; i++) {
     })
 }
 
-let removeInputsIngredients = document.getElementsByClassName("closeIngredients")
-// console.log(removeInputsIngredients.length)
-
-
 
 // Remove Inputs Preparation
+let removeInputsPreparation = document.querySelectorAll("#closePreparation")
+console.log(removeInputsPreparation.length)
+
 for (let i = 0; i < removeInputsPreparation.length; i++) {
     removeInputsPreparation[i].addEventListener("click", function() {
         
@@ -28,5 +30,8 @@ for (let i = 0; i < removeInputsPreparation.length; i++) {
     })
 }
 
-let removeInputsPreparation = document.querySelectorAll("#closePreparation")
-console.log(removeInputsPreparation.length)
+// Novos Botoes 
+// function newClosePreparation() {
+//     let parentInputsPreparation = this.parentElement
+//     parentInputsPreparation.parentNode.removeChild(parentInputsPreparation)
+// }
