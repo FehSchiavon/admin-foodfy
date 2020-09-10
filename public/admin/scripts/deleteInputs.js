@@ -19,7 +19,7 @@ for (let i = 0; i < removeInputsIngredients.length; i++) {
 
 // Remove Inputs Preparation
 let removeInputsPreparation = document.querySelectorAll("#closePreparation")
-console.log(removeInputsPreparation.length)
+// console.log(removeInputsPreparation.length)
 
 for (let i = 0; i < removeInputsPreparation.length; i++) {
     removeInputsPreparation[i].addEventListener("click", function() {

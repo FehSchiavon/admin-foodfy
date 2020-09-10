@@ -17,8 +17,11 @@
                 <h1>Editando receita</h1>
             </div>
             <div class="introEditButton">
-                <button>Deletar</button>
-                <button type="submit">Salvar receitas</button>
+                <form action="/admin/recipes?_method=DELETE" method="POST"></form>
+                    <button>Deletar</button>
+                    <button type="submit">Salvar receitas</button>
+                    <input type="hidden" name="id" value={{recipe.id}}>
+                </form>
             </div>
         </div>
 
