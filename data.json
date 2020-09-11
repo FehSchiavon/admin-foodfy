@@ -73,7 +73,6 @@
       "information": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \r\n\r\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface."
     },
     {
-      "id": 4,
       "image": "https://images.unsplash.com/photo-1492541641671-bd75cf01a094?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
       "title": "Churrascos Grego",
       "author": "João Shiba",
@@ -84,7 +83,8 @@
       "preparation": [
         "02 Queijos Frescos"
       ],
-      "information": "Preparar alguma panquecas!"
+      "information": "Preparar alguma panquecas!",
+      "id": 4
     }
   ]
 }
