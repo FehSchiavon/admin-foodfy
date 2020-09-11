@@ -82,7 +82,7 @@ exports.post = function(req, res) {
 
 exports.put = function(req, res) {
     const { id } = req.body // Id esta vindo errado
-    console.log(id)
+    // console.log(id)
     let index = 0 
 
     const foundRecipes = data.recipes.find(function(recipe, foundIndex) {
@@ -102,7 +102,7 @@ exports.put = function(req, res) {
         ingredients: ingredients(req.body.ingredients),
         preparation: preparation(foundRecipes.preparation),
     }
-    console.log(req.body)
+    // console.log(req.body)
 
     data.recipes[index] = recipe
     
@@ -125,6 +125,6 @@ exports.delete = function(req, res) {
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
         if(err) return res.send('Write file error!')
-        return res.redirect("admin/index")
+        return res.redirect("recipes")
     })
 }
