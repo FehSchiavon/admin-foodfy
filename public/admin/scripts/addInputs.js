@@ -13,7 +13,6 @@ function addIngredient() {
     ingredients.appendChild(newField)
 }
 
-
 function addPreparation() {
     const ingredients = document.querySelector(".preparationEditInputAll")
     const fieldContainer = document.querySelectorAll(".preparationEditInput")
