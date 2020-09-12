@@ -120,8 +120,9 @@ exports.delete = function(req, res) {
     const filterRecipes = data.recipes.filter(function(recipe) {
         return recipe.id != id
     })
+    console.log(filterRecipes)
 
-    data.students = filterRecipes
+    data.recipes = filterRecipes
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
         if(err) return res.send('Write file error!')

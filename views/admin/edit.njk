@@ -11,8 +11,8 @@
 {% block content %}
 
     <form action="/admin/recipes?_method=DELETE" method="POST">
-        <input type="hidden" name="id" value={{recipe.id}}>
         <button type="submit">Deletar</button>
+        <input type="hidden" name="id" value={{recipe.id}}>
     </form>
 
     <form action="/admin/recipes?_method=PUT" method="POST" class="form">
