@@ -91,23 +91,23 @@ exports.put = function(req, res) {
             return true
         } 
     })
+    // console.log(foundRecipes)
 
     if (!foundRecipes) return res.send('Recipe not found!')
 
     const recipe = {
-        ...foundRecipes,
+        // ...foundRecipes,
         ...req.body,
         id: Number(req.body.id),
-        ingredients: ingredients(foundRecipes.ingredients),
+        ingredients: ingredients(req.body.ingredients),
         preparation: preparation(foundRecipes.preparation),
     }
-    // console.log(foundRecipes.preparation)
+    // console.log(req.body)
 
     data.recipes[index] = recipe
     
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
         if (err) return res.send('Write error!')
-
         return res.redirect(`/admin/recipes/${id}`)
     })
 
@@ -120,11 +120,11 @@ exports.delete = function(req, res) {
     const filterRecipes = data.recipes.filter(function(recipe) {
         return recipe.id != id
     })
-
-    data.students = filterRecipes
+    
+    data.recipes = filterRecipes
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
         if(err) return res.send('Write file error!')
-        return res.redirect("admin/index")
+        return res.redirect("recipes")
     })
 }
