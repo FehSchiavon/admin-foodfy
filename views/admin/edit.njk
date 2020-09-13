@@ -10,10 +10,14 @@
 
 {% block content %}
 
-    <form action="/admin/recipes?_method=DELETE" method="POST">
-        <button type="submit">Deletar</button>
-        <input type="hidden" name="id" value={{recipe.id}}>
-    </form>
+    <div class="introEdit">
+        <div class="introEditButton">
+            <form action="/admin/recipes?_method=DELETE" method="POST">
+                <button type="submit">Deletar</button>
+                <input type="hidden" name="id" value={{recipe.id}}>
+            </form>
+        </div>
+    </div>
 
     <form action="/admin/recipes?_method=PUT" method="POST" class="form">
 
