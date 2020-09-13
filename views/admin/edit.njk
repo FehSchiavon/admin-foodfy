@@ -10,8 +10,8 @@
 
 {% block content %}
 
-    <div class="introEdit">
-        <div class="introEditButton">
+    <div class="introEditDelete">
+        <div class="introEditButtonDelete">
             <form action="/admin/recipes?_method=DELETE" method="POST">
                 <button type="submit">Deletar</button>
                 <input type="hidden" name="id" value={{recipe.id}}>

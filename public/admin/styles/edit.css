@@ -15,13 +15,22 @@
     font-size: 16px;
     color: #fff;
     text-decoration: none;
-    background-color: #DC4747;
+    background-color: #6558C3;
     padding: 9px 20px;
     border-radius: 4px;
 }
 
-.introEdit .introEditButton button + button {
-    background-color: #6558C3;
+.introEditDelete {
+    
+}
+
+.introEditButtonDelete button {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #DC4747;
+    padding: 9px 20px;
+    border-radius: 4px;
 }
 
 .imgEdit,
