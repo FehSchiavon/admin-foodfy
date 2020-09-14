@@ -9,7 +9,14 @@
 {% endblock %}
 
 {% block content %}
-    <h1>Gerenciar receitas</h1>
+    <div class="introIndex">
+        <div class="introIndexText">
+            <h1>Gerenciar receitas</h1>
+        </div>
+        <div class="introEditButton">
+            <a href="/admin/recipes/create">Nova receita</a>
+        </div>
+    </div>
 
     <div class="listRecipes">
         {% for recipe in recipes %}
