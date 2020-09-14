@@ -13,7 +13,7 @@
     <div class="introEditDelete">
         <div class="introEditButtonDelete">
             <form action="/admin/recipes?_method=DELETE" method="POST">
-                <button type="submit">Deletar</button>
+                <button type="submit" id="form-delete">Deletar</button>
                 <input type="hidden" name="id" value={{recipe.id}}>
             </form>
         </div>
@@ -79,5 +79,15 @@
         <input type="hidden" name="id" value="{{ recipe.id }}">
 
     </form>
+
+    <script>
+        const formDelete = document.querySelector("#form-delete")
+        formDelete.addEventListener('submit', function(event) {
+            const confirmation = confirm("Deseja Deletar?")
+            if (!confirmation) {
+            event.preventDefault()
+            }
+        })
+    </script>
 
 {% endblock %}
