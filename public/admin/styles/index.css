@@ -3,6 +3,15 @@ h1 {
     margin: 50px 0px 30px 0px;
 }
 
+.introIndex {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 980px;
+}
+
 .listRecipes {
     display: grid;
     grid-template-columns: 1fr 1fr;
