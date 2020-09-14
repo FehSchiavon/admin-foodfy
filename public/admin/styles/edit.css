@@ -1,9 +1,10 @@
 .introEdit {
-    margin-top: 55px;
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 980px;
 }
 
 .introEdit .introEditText h1 {
@@ -21,16 +22,22 @@
 }
 
 .introEditDelete {
-    
+    display: flex;
+    flex-direction: row;
+    width: 980px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .introEditButtonDelete button {
+    margin-top: 50px;
     font-size: 16px;
     color: #fff;
     text-decoration: none;
     background-color: #DC4747;
     padding: 9px 20px;
     border-radius: 4px;
+    width: 144.45px;
 }
 
 .imgEdit,
