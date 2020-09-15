@@ -42,6 +42,22 @@
         "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado."
       ],
       "information": "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \\n\\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? \r\n\r\n\r\nA ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface."
+    },
+    {
+      "id": 3,
+      "image": "https://images.unsplash.com/photo-1492541641671-bd75cf01a094?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+      "title": "Triplo bacon burger",
+      "author": "João Shibaaaaa",
+      "ingredients": [
+        "3 kg de carne moída (escolha uma carne magra e macia)",
+        "03 Colher de ..."
+      ],
+      "preparation": [
+        "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado.",
+        "02 Queijos Frescos",
+        "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado."
+      ],
+      "information": "Desfaz as alterações que já estão adicionamos na working tree. HEAD refere-se ao estado no qual estou trabalhando. Se git status for executado após esse comando, as alterações continuam nos arquivos, porém não mais marcadas para commit. Para removê-las dos arquivos basta usar o comando do item anterior;"
     }
   ],
   "students": [
