@@ -4,12 +4,15 @@ h1 {
 }
 
 .introIndex {
-    margin-top: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     width: 980px;
+}
+
+.introIndex .introEditButton a {
+    text-decoration: none;
 }
 
 .listRecipes {
