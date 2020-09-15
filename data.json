@@ -60,15 +60,13 @@
       "information": "Desfaz as alterações que já estão adicionamos na working tree. HEAD refere-se ao estado no qual estou trabalhando. Se git status for executado após esse comando, as alterações continuam nos arquivos, porém não mais marcadas para commit. Para removê-las dos arquivos basta usar o comando do item anterior;"
     },
     {
-      "id": 4,
       "image": "https://p2.trrsf.com/image/fget/cf/1200/1200/filters:quality(85)/images.terra.com/2018/10/04/frango-frito-americano-como-fazer.jpg",
       "title": "Frango Frito",
       "author": "Julia Petes",
       "ingredients": [
         "3 kg de carne moída (escolha uma carne magra e macia)",
         "3 kg de carne moída (escolha uma carne magra e macia)",
-        "3 kg de carne moída (escolha uma carne magra e macia)",
-        "3 colheres (sopa) de farinha de trigoz"
+        "3 kg de carne moída (escolha uma carne magra e macia)"
       ],
       "preparation": [
         "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado.",
@@ -76,7 +74,8 @@
         "02 Queijos Frescos",
         "Misture todos os ingredientes muito bem e amasse para que fique tudo muito bem misturado."
       ],
-      "information": "O guia do CSS Tricks também aborda alguns outros aspectos importantes do Flex: suporte dos navegadores, bugs, propriedades relacionadas, prefixos e etc. Caso tenha alguma dúvida que não foi abordada neste artigo, você pode consultar estes temas relacionados no link."
+      "information": "O guia do CSS Tricks também aborda alguns outros aspectos importantes do Flex: suporte dos navegadores, bugs, propriedades relacionadas, prefixos e etc. Caso tenha alguma dúvida que não foi abordada neste artigo, você pode consultar estes temas relacionados no link.",
+      "id": 4
     }
   ],
   "students": [
